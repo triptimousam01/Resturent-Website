@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Cart | Foodie Haven</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Foodie<span>Haven</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="cart.html" class="cart-btn">
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CART HEADER -->
+
+    <section class="cart-header">
+
+        <p>FOODIE HAVEN</p>
+
+        <h1>My <span>Cart</span></h1>
+
+    </section>
+
+
+    <!-- CART -->
+
+    <section class="cart-section">
+
+        <div id="cart-container">
+
+            <!-- JavaScript will add cart items here -->
+
+        </div>
+
+
+        <!-- EMPTY CART -->
+
+        <div id="empty-cart" class="empty-cart">
+
+            <div>🛒</div>
+
+            <h2>Your cart is empty</h2>
+
+            <p>
+                Looks like you haven't added anything yet.
+            </p>
+
+            <a href="menu.html" class="primary-btn">
+                Browse Menu
+            </a>
+
+        </div>
+
+
+        <!-- CART SUMMARY -->
+
+        <div id="cart-summary" class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+
+                <span>Subtotal</span>
+
+                <span id="subtotal">
+                    ₹0
+                </span>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>Delivery</span>
+
+                <span id="delivery">
+                    ₹40
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div class="summary-total">
+
+                <span>Total</span>
+
+                <span id="total">
+                    ₹0
+                </span>
+
+            </div>
+
+            <button
+                class="checkout-btn"
+                onclick="checkout()">
+
+                Proceed to Checkout
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Foodie Haven. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

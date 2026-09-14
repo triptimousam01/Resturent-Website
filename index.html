@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie Haven | Restaurant</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Foodie<span>Haven</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="cart.html" class="cart-btn">
+                    🛒 Cart <span id="cart-count">0</span>
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO FOODIE HAVEN</p>
+
+            <h1>
+                Delicious Food,
+                <span>Happy Moments.</span>
+            </h1>
+
+            <p class="hero-text">
+                Fresh ingredients, delicious recipes and unforgettable
+                flavors — all served with love.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="primary-btn">
+                    Explore Menu
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-title">
+
+            <p>ABOUT US</p>
+
+            <h2>
+                We Make Food With
+                <span>Love</span>
+            </h2>
+
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-image">
+                <div class="image-placeholder">
+                    🍽️
+                </div>
+            </div>
+
+            <div class="about-text">
+
+                <h3>
+                    Taste the Difference
+                </h3>
+
+                <p>
+                    At Foodie Haven, we believe that great food brings
+                    people together. Our chefs prepare every dish using
+                    fresh ingredients and special recipes.
+                </p>
+
+                <p>
+                    Whether you're having a family dinner, a date,
+                    or simply enjoying your favorite meal, we're here
+                    to make your experience special.
+                </p>
+
+                <a href="#menu" class="primary-btn">
+                    Discover Our Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU SECTION ================= -->
+
+    <section class="menu" id="menu">
+
+        <div class="section-title">
+
+            <p>OUR MENU</p>
+
+            <h2>
+                Popular <span>Dishes</span>
+            </h2>
+
+            <p class="section-description">
+                Some of our most loved dishes
+            </p>
+
+        </div>
+
+
+        <div class="food-container">
+
+
+            <!-- Food Card 1 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍕
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Cheese Pizza</h3>
+
+                    <p>
+                        Fresh cheesy pizza with delicious toppings.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="price">₹299</span>
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Cheese Pizza', 299)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 2 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍔
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Classic Burger</h3>
+
+                    <p>
+                        Juicy burger with fresh vegetables and cheese.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="price">₹199</span>
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Classic Burger', 199)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 3 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍝
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Italian Pasta</h3>
+
+                    <p>
+                        Creamy pasta prepared with fresh ingredients.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="price">₹249</span>
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Italian Pasta', 249)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food Card 4 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍰
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>
+                        Soft and delicious chocolate cake.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <span class="price">₹149</span>
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Chocolate Cake', 149)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+
+            <p>CONTACT US</p>
+
+            <h2>
+                Let's <span>Connect</span>
+            </h2>
+
+        </div>
+
+        <div class="contact-content">
+
+            <div class="contact-info">
+
+                <h3>Foodie Haven</h3>
+
+                <p>📍 Patna, Bihar, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>📧 hello@foodiehaven.com</p>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Your Message"
+                    required>
+                </textarea>
+
+                <button type="submit" class="primary-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Foodie Haven. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

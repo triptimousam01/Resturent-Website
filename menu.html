@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Foodie Haven</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Foodie<span>Haven</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="cart.html" class="cart-btn">
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MENU HEADER -->
+
+    <section class="menu-header">
+
+        <p>FOODIE HAVEN</p>
+
+        <h1>Our <span>Menu</span></h1>
+
+        <p>
+            Choose your favorite food and enjoy delicious flavors.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="menu-section">
+
+        <div class="menu-tools">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search your favorite food..."
+            >
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+
+        <div class="categories">
+
+            <button
+                class="category-btn active"
+                onclick="filterFood('all', this)">
+                All
+            </button>
+
+            <button
+                class="category-btn"
+                onclick="filterFood('pizza', this)">
+                🍕 Pizza
+            </button>
+
+            <button
+                class="category-btn"
+                onclick="filterFood('burger', this)">
+                🍔 Burger
+            </button>
+
+            <button
+                class="category-btn"
+                onclick="filterFood('pasta', this)">
+                🍝 Pasta
+            </button>
+
+            <button
+                class="category-btn"
+                onclick="filterFood('dessert', this)">
+                🍰 Dessert
+            </button>
+
+            <button
+                class="category-btn"
+                onclick="filterFood('drink', this)">
+                🥤 Drinks
+            </button>
+
+        </div>
+
+
+        <!-- FOOD ITEMS -->
+
+        <div class="menu-grid">
+
+
+            <!-- Pizza -->
+
+            <div class="menu-food-card" data-category="pizza">
+
+                <div class="menu-food-image">
+                    🍕
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Cheese Pizza</h3>
+
+                    <p>
+                        Classic pizza loaded with mozzarella cheese.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹299</span>
+
+                        <button
+                            onclick="addToCart('Cheese Pizza', 299)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-food-card" data-category="pizza">
+
+                <div class="menu-food-image">
+                    🍕
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Veggie Pizza</h3>
+
+                    <p>
+                        Fresh vegetables with delicious pizza sauce.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹279</span>
+
+                        <button
+                            onclick="addToCart('Veggie Pizza', 279)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Burger -->
+
+            <div class="menu-food-card" data-category="burger">
+
+                <div class="menu-food-image">
+                    🍔
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Classic Burger</h3>
+
+                    <p>
+                        Juicy burger with cheese and fresh vegetables.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹199</span>
+
+                        <button
+                            onclick="addToCart('Classic Burger', 199)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-food-card" data-category="burger">
+
+                <div class="menu-food-image">
+                    🍔
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Cheese Burger</h3>
+
+                    <p>
+                        Crispy burger with extra melted cheese.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹229</span>
+
+                        <button
+                            onclick="addToCart('Cheese Burger', 229)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pasta -->
+
+            <div class="menu-food-card" data-category="pasta">
+
+                <div class="menu-food-image">
+                    🍝
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Italian Pasta</h3>
+
+                    <p>
+                        Creamy pasta prepared with fresh ingredients.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹249</span>
+
+                        <button
+                            onclick="addToCart('Italian Pasta', 249)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-food-card" data-category="pasta">
+
+                <div class="menu-food-image">
+                    🍝
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Red Sauce Pasta</h3>
+
+                    <p>
+                        Pasta cooked in rich and spicy tomato sauce.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹229</span>
+
+                        <button
+                            onclick="addToCart('Red Sauce Pasta', 229)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dessert -->
+
+            <div class="menu-food-card" data-category="dessert">
+
+                <div class="menu-food-image">
+                    🍰
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>
+                        Soft chocolate cake with rich chocolate flavor.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹149</span>
+
+                        <button
+                            onclick="addToCart('Chocolate Cake', 149)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-food-card" data-category="dessert">
+
+                <div class="menu-food-image">
+                    🍨
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Ice Cream</h3>
+
+                    <p>
+                        Creamy and refreshing vanilla ice cream.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹99</span>
+
+                        <button
+                            onclick="addToCart('Ice Cream', 99)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Drinks -->
+
+            <div class="menu-food-card" data-category="drink">
+
+                <div class="menu-food-image">
+                    🥤
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Cold Coffee</h3>
+
+                    <p>
+                        Chilled creamy coffee with a smooth taste.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹129</span>
+
+                        <button
+                            onclick="addToCart('Cold Coffee', 129)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-food-card" data-category="drink">
+
+                <div class="menu-food-image">
+                    🥤
+                </div>
+
+                <div class="menu-food-info">
+
+                    <h3>Fresh Lemonade</h3>
+
+                    <p>
+                        Fresh and refreshing homemade lemonade.
+                    </p>
+
+                    <div class="menu-food-bottom">
+
+                        <span>₹89</span>
+
+                        <button
+                            onclick="addToCart('Fresh Lemonade', 89)">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Foodie Haven. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>
